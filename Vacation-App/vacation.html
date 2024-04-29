@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Destination List</title>
+    <link rel="stylesheet" href="vacation.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Vacation Destination List</h1>
+        <p>Find exciting places to visit. Fill the form below to them to your list</p>
+    </header>
+
+    <main>
+        <form action="" id="destination_details_form">
+            <label for="name">Destination Name:</label>
+            <input type="text" id="name" required  placeholder="provide a destination name">
+
+            <label for="location">Destination Location:</label>
+            <input type="text" id="location" required  placeholder="provide a destination location">
+
+            <label for="photo">Photo:</label>
+            <input type="text" id="photo" placeholder="provide a url for a photo"> <!-- put photo as required -->
+
+            <label for="Description">Destination Description:</label>
+            <textarea name="" id="description" cols="30" rows="10"  placeholder="describe the destination"></textarea>
+
+            <button type="submit" class="add-button">Add To List</button>
+        </form>
+
+        <article>
+            <h2 id="title">Enter Destination Details</h2>
+
+            <div id="destination_container">
+                <div class="card">
+                    <img src="/images/image1.jpg" alt=""> 
+
+                    <div class="card-body">
+                        <h3>Destination Name</h3>
+                        <h4>Destination Location</h4>
+                        <p class="card-text">Destination Description</p>
+                        <button>Remove</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script src="vacation.js"></script>
+</body>
+</html>

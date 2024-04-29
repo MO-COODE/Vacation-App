@@ -1,0 +1,53 @@
+<div class="card">
+                    <img src="/images/image1.jpg" alt=""> 
+
+                    <div class="card-body">
+                        <h3>Destination Name</h3> <!-- ${<h3>destination name</h3>} -->
+                        <h4>Destination Location</h4> <!-- ${<h4>destination location</h4>} -->
+                        <p class="card-text">Destination Description</p> <!-- ${<p>destination description</p>} -->
+                        <button>Remove</button>
+                    </div>
+                    
+                </div>
+
+
+                
+detailsForm = document.getElementById('destination_details_form');
+let destName = document.getElementById('name').value; 
+let destLocation = document.getElementById('location').value; 
+let destPhoto = document.getElementById('photo').value; 
+let destDescription = document.getElementById('description').value; 
+
+
+addButton = document.querySelector('.add-button');
+
+addButton.addEventListener('submit', (e) => {
+    console.log('submit button is working');
+
+   
+
+})
+
+
+
+/* let formDetails = '';
+
+detailsForm.forEach((detail) => {
+    detailsForm = detailsForm + `<div class="card-body">
+    <h3>${destName}</h3>
+    <h4>${destLocation}</h4>
+    <p class="card-text">${destDescription}</p> `
+});
+
+ document.querySelector('.card-body').innerHTML = detailsForm; */
+
+
+
+
+//leave this here
+//remove card
+function removeDestination(e) {
+    let card = e.target.parentElement.parentElement;
+    card.remove();
+};
+
